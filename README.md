@@ -25,3 +25,20 @@ The R libraries can be incredibly redundant - we flag up redundancies and sugges
 the preferred function.  By the word "prefer", we mean use the preferred
 function unless the redundant function is more readable (e.g. for consistency
 with documentation or related code).
+
+For each function, we display a separate panel for each function signature.  If 
+the variable name in the signature is in **bold**, add it as a named parameter. 
+If the parameter type is in **bold**, the parameter may be
+provided by position or as a named parameter.
+
+For example, one of the signatures for the `base::complex` function is:
+
+---
+
+base::**complex**(length.out: **Numeric(1)**, **modulus**: Numeric, **argument**: Numeric): Complex(length.out)
+
+*Returns* a vector of `length.out` complex numbers, where each complex number has modulus (magnitude) part taken from the next value in `modulus` and argument (phase) part taken from the next value in `argument`. If `modulus` or `argument` are shorter than `length.out`, they are recycled.
+
+---
+
+This signature for this form of the function allows `length.out` to be specified as the first positional parameter. It *must* be a numeric vector of size 1. The arguments `modulus` and `argument` *must* be named parameters, both numeric vectors (of any length).  The return value is a complex number vector of size `length.out`.
