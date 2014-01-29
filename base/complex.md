@@ -3,19 +3,19 @@
 Create complex numbers
 
 ---
-base::**complex**(length.out: **Numeric**, real: **Numeric**, imaginary: **Numeric**): Complex(*length.out*)
+base::**complex**(*length.out*: **Numeric**, *real*: **Numeric**, *imaginary*: **Numeric**): Complex(*length.out*)
 
-base::**complex**(length.out: **Numeric**, real: **Numeric**): Complex(*length.out*)
+base::**complex**(*length.out*: **Numeric**, *real*: **Numeric**): Complex(*length.out*)
 
-base::**complex**(length.out: **Numeric**, **imaginary**: Numeric): Complex(*length.out*)
+base::**complex**(*length.out*: **Numeric**, ***imaginary***: Numeric): Complex(*length.out*)
 
-base::**complex**(length.out: **Numeric**): Complex(*length.out*)
+base::**complex**(*length.out*: **Numeric**): Complex(*length.out*)
 
-base::**complex**(**real**: Numeric, **imaginary**: Numeric): Complex
+base::**complex**(***real***: Numeric, ***imaginary***: Numeric): Complex
 
-base::**complex**(**real**: Numeric): Complex
+base::**complex**(***real***: Numeric): Complex
 
-base::**complex**(**imaginary**: Numeric): Complex
+base::**complex**(***imaginary***: Numeric): Complex
 
 If `length.out` is not provided, set to the length of the longest supplied `real` or `imaginary` vectors.
 
@@ -27,17 +27,17 @@ If `imaginary` is not provided, set to 0.
 
 ---
 
-base::**complex**(length.out: **Numeric**, **modulus**: Numeric, **argument**: Numeric): Complex(*length.out*)
+base::**complex**(*length.out*: **Numeric**, ***modulus***: Numeric, ***argument***: Numeric): Complex(*length.out*)
 
-base::**complex**(length.out: **Numeric**, **modulus**: Numeric): Complex(*length.out*)
+base::**complex**(*length.out*: **Numeric**, ***modulus***: Numeric): Complex(*length.out*)
 
-base::**complex**(length.out: **Numeric**, **argument**: Numeric): Complex(*length.out*)
+base::**complex**(*length.out*: **Numeric**, ***argument***: Numeric): Complex(*length.out*)
 
-base::**complex**(**modulus**: Numeric, **argument**: Numeric): Complex
+base::**complex**(***modulus***: Numeric, ***argument***: Numeric): Complex
 
-base::**complex**(**modulus**: Numeric): Complex
+base::**complex**(***modulus***: Numeric): Complex
 
-base::**complex**(**argument**: Numeric): Complex
+base::**complex**(***argument***: Numeric): Complex
 
 If `length.out` is not provided, set to the length of the longest supplied `modulus` or `argument` vectors.
 
