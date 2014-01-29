@@ -1,14 +1,14 @@
-### `base::abs`
+### base::abs
 
 Absolute value
 
 ---
 
-#### `base::abs(x: Integer): Integer`
+base::**abs**(x: **Integer**): Integer
 
-#### `base::abs(x: Numeric): Numeric`
+base::**abs**(x: **Numeric**): Numeric
 
-**Returns**
+*Returns*
 
 If `x` >= 0, return `x`
 
@@ -16,22 +16,19 @@ If `x` < 0, return `-x`
 
 ---
 
-#### `base::abs(x: Complex): Complex`
+base::**abs**(x: **Complex**): Complex
 
 _This function is redundant: prefer `base::Mod(z: Complex)`_
 
-**Returns**
-
-Return the modulus (magnitude) of `x`
-
+*Returns* the modulus (magnitude) of `x`
 
 ---
 
-#### `base::abs(x: Logical): Integer`
+base::**abs**(x: **Logical**): Integer
 
 _This function is redundant: prefer `base::as.integer(x: Logical)`_
 
-**Returns**
+*Returns*
 
 If `x` is `TRUE`, return `1L`
 
