@@ -16,9 +16,9 @@ If `x` < 0, return `-x`
 
 ---
 
-base::**abs**(x: **Complex**): Complex
+base::**abs**(x: **Complex**): Numeric
 
-_This function is redundant: prefer `base::Mod(z: Complex)`_
+_This function is redundant: prefer `base::Mod(z: Complex): Numeric`_
 
 *Returns* the modulus (magnitude) of `x`
 
@@ -26,7 +26,7 @@ _This function is redundant: prefer `base::Mod(z: Complex)`_
 
 base::**abs**(x: **Logical**): Integer
 
-_This function is redundant: prefer `base::as.integer(x: Logical)`_
+_This function is redundant: prefer `base::as.integer(x: Logical): Integer`_
 
 *Returns*
 
