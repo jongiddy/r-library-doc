@@ -4,9 +4,9 @@ Absolute value
 
 ---
 
-base::**abs**(x: **Integer**): Integer
+base::**abs**(*x*: **Integer**): Integer
 
-base::**abs**(x: **Numeric**): Numeric
+base::**abs**(*x*: **Numeric**): Numeric
 
 *Returns*
 
@@ -16,7 +16,7 @@ If `x` < 0, return `-x`
 
 ---
 
-base::**abs**(x: **Complex**): Numeric
+base::**abs**(*x*: **Complex**): Numeric
 
 _This function is redundant: prefer `base::Mod(z: Complex): Numeric`_
 
@@ -24,7 +24,7 @@ _This function is redundant: prefer `base::Mod(z: Complex): Numeric`_
 
 ---
 
-base::**abs**(x: **Logical**): Integer
+base::**abs**(*x*: **Logical**): Integer
 
 _This function is redundant: prefer `base::as.integer(x: Logical): Integer`_
 
