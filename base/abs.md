@@ -8,11 +8,7 @@ base::**abs**(*x*: **Integer**): Integer
 
 base::**abs**(*x*: **Numeric**): Numeric
 
-*Returns*
-
-If `x` >= 0, return `x`
-
-If `x` < 0, return `-x`
+*Returns* `-x` when `x < 0`, else `x`
 
 ---
 
@@ -28,12 +24,11 @@ base::**abs**(*x*: **Logical**): Integer
 
 _This function is redundant: prefer `base::as.integer(x: Logical): Integer`_
 
-*Returns*
 
-If `x` is `TRUE`, return `1L`
-
-If `x` is `FALSE`, return `0L`
-
-If `x` is `NA`, return `NA_integer_`
+When | Returns
+-----|--------
+`x == TRUE` |  `1L`
+`x == FALSE` |  `0L`
+`base::is.na(x)` | `base::NA_integer_`
 
 ---
