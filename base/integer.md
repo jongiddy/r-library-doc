@@ -4,7 +4,7 @@ Create an integer vector with each element set to 0.
 
 ---
 base::**integer**(*length*: **Numeric(1)**): Integer(*length*)
-> ! base::**is.na**(*length*) & base::**as.integer**(*length*) >= 0
+> ! base::**is.na**(*length*) && base::**as.integer**(*length*) >= 0
 
 *Returns* a vector of integers of length `length`. Each integer in the vector is 0.
 
