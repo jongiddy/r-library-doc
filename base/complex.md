@@ -8,6 +8,11 @@ base::**complex**(length.out: **Numeric(1)**, real: **Numeric**, imaginary: **Nu
 *Returns* a vector of `length.out` complex numbers, where each complex number has real part taken from the next value in `real` and imaginary part taken from the next value in `imaginary`. If `real` or `imaginary` are shorter than `length.out`, they are recycled.
 
 ---
+base::**complex**(length.out: **Numeric(1)**, real: **Numeric**): Complex(*length.out*)
+
+*Returns* a vector of `length.out` complex numbers, where each complex number has real part taken from the next value in `real` and zero imaginary part. If `real` is shorter than `length.out`, it is recycled.
+
+---
 
 base::**complex**(**real**: Numeric, **imaginary**: Numeric): Complex
 
