@@ -7,7 +7,7 @@ base::**complex**(length.out: **Numeric**, real: **Numeric**, imaginary: **Numer
 
 base::**complex**(length.out: **Numeric**, real: **Numeric**): Complex(*length.out*)
 
-base::**complex**(length.out: **Numeric**, imaginary: **Numeric**): Complex(*length.out*)
+base::**complex**(length.out: **Numeric**, **imaginary**: Numeric): Complex(*length.out*)
 
 base::**complex**(length.out: **Numeric**): Complex(*length.out*)
 
