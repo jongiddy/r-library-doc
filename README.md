@@ -5,7 +5,10 @@ R package documentation, rewritten for programmers from other languages
 
 The R documentation for functions typically is a mix of "does this, except if
 something, when it does that instead, or if the first argument is missing, do
-another version of this".  For people used to programming languages where
+another version of this". See [`base::diag`](http://stat.ethz.ch/R-manual/R-devel/library/base/html/diag.html) 
+for a typical example (and that's one of the better-written examples).
+
+For people used to programming languages where
 libraries have a single function signature, or where polymorphism is slightly
 readable, this will drive them insane.  Normal R programmers cope by just 
 using what worked last time.
