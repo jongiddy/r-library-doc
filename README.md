@@ -18,7 +18,7 @@ Here, we rewrite the functions to make the libraries clearer.
 First, a word about types. There are no scalars in R - a single number by itself
 is a vector of length 1. Almost everything else is a vector. Multi-dimensional
 arrays (including 2-dimensional matrices) are just vectors with an accompanying
-descriptin of the dimensions.
+description of the dimensions.
 
 Hence, many functions will accept a vector and return a vector, cloning any
 additional values such as dimensions and labels. We call these functions
