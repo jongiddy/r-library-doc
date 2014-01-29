@@ -3,7 +3,7 @@
 Create complex numbers
 
 ---
-base::**complex**(length.out: **Numeric(1)**, real: **Numeric**, imaginary: **Numeric**): Complex(length.out)
+base::**complex**(length.out: **Numeric(1)**, real: **Numeric**, imaginary: **Numeric**): Complex(*length.out*)
 
 *Returns* a vector of `length.out` complex numbers, where each complex number has real part taken from the next value in `real` and imaginary part taken from the next value in `imaginary`. If `real` or `imaginary` are shorter than `length.out`, they are recycled.
 
@@ -15,7 +15,7 @@ Equivalent to calling `base::complex(length.out: Numeric(1), real: Numeric, imag
 
 ---
 
-base::**complex**(length.out: **Numeric(1)**, **modulus**: Numeric, **argument**: Numeric): Complex(length.out)
+base::**complex**(length.out: **Numeric(1)**, **modulus**: Numeric, **argument**: Numeric): Complex(*length.out*)
 
 *Returns* a vector of `length.out` complex numbers, where each complex number has modulus (magnitude) part taken from the next value in `modulus` and argument (phase) part taken from the next value in `argument`. If `modulus` or `argument` are shorter than `length.out`, they are recycled.
 
@@ -33,7 +33,7 @@ base::**complex**(): Complex(0)
 
 ---
 
-base::**complex**(length.out: **Numeric(1)**): Complex(length.out)
+base::**complex**(length.out: **Numeric(1)**): Complex(*length.out*)
 
 *Returns* a vector of `length.out` complex zeros
 
