@@ -3,13 +3,13 @@
 Create complex numbers
 
 ---
-base::**complex**(length.out: **Numeric(1)**, real: **Numeric**, imaginary: **Numeric**): Complex(*length.out*)
+base::**complex**(length.out: **Numeric**, real: **Numeric**, imaginary: **Numeric**): Complex(*length.out*)
 
-base::**complex**(length.out: **Numeric(1)**, real: **Numeric**): Complex(*length.out*)
+base::**complex**(length.out: **Numeric**, real: **Numeric**): Complex(*length.out*)
 
-base::**complex**(length.out: **Numeric(1)**, imaginary: **Numeric**): Complex(*length.out*)
+base::**complex**(length.out: **Numeric**, imaginary: **Numeric**): Complex(*length.out*)
 
-base::**complex**(length.out: **Numeric(1)**): Complex(*length.out*)
+base::**complex**(length.out: **Numeric**): Complex(*length.out*)
 
 base::**complex**(**real**: Numeric, **imaginary**: Numeric): Complex
 
@@ -23,15 +23,15 @@ If `real` is not provided, set to 0.
 
 If `imaginary` is not provided, set to 0.
 
-*Returns* a vector of `length.out` complex numbers, where each complex number has real part taken from the next value in `real` and imaginary part taken from the next value in `imaginary`. If `real` or `imaginary` are shorter than `length.out`, they are recycled.
+*Returns* a vector of complex numbers of length `length.out[1]`, where each complex number has real part taken from the next value in `real` and imaginary part taken from the next value in `imaginary`. If `real` or `imaginary` are shorter than `length.out[1]`, they are recycled.
 
 ---
 
-base::**complex**(length.out: **Numeric(1)**, **modulus**: Numeric, **argument**: Numeric): Complex(*length.out*)
+base::**complex**(length.out: **Numeric**, **modulus**: Numeric, **argument**: Numeric): Complex(*length.out*)
 
-base::**complex**(length.out: **Numeric(1)**, **modulus**: Numeric): Complex(*length.out*)
+base::**complex**(length.out: **Numeric**, **modulus**: Numeric): Complex(*length.out*)
 
-base::**complex**(length.out: **Numeric(1)**, **argument**: Numeric): Complex(*length.out*)
+base::**complex**(length.out: **Numeric**, **argument**: Numeric): Complex(*length.out*)
 
 base::**complex**(**modulus**: Numeric, **argument**: Numeric): Complex
 
@@ -45,7 +45,7 @@ If `modulus` is not provided, set to 1.
 
 If `argument` is not provided, set to 0.
 
-*Returns* a vector of `length.out` complex numbers, where each complex number has modulus (magnitude) part taken from the next value in `modulus` and argument (phase) part taken from the next value in `argument`. If `modulus` or `argument` are shorter than `length.out`, they are recycled.
+*Returns* a vector of `length.out[1]` complex numbers, where each complex number has modulus (magnitude) part taken from the next value in `modulus` and argument (phase) part taken from the next value in `argument`. If `modulus` or `argument` are shorter than `length.out[1]`, they are recycled.
 
 ---
 
