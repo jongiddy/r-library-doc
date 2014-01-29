@@ -17,7 +17,7 @@ base::**complex**(**real**: Numeric): Complex
 
 base::**complex**(**imaginary**: Numeric): Complex
 
-If `length.out` is not provided, set to the longer of any `real` or `imaginary` vector.
+If `length.out` is not provided, set to the length of the longer of any `real` or `imaginary` vector.
 
 If `real` is not provided, set to 0.
 
