@@ -17,7 +17,7 @@ base::**complex**(**real**: Numeric): Complex
 
 base::**complex**(**imaginary**: Numeric): Complex
 
-If `length.out` is not provided, set to the length of the longest of supplied `real` or `imaginary` vectors.
+If `length.out` is not provided, set to the length of the longest supplied `real` or `imaginary` vectors.
 
 If `real` is not provided, set to 0.
 
@@ -39,7 +39,7 @@ base::**complex**(**modulus**: Numeric): Complex
 
 base::**complex**(**argument**: Numeric): Complex
 
-If `length.out` is not provided, set to the length of the longest of supplied `modulus` or `argument` vectors.
+If `length.out` is not provided, set to the length of the longest supplied `modulus` or `argument` vectors.
 
 If `modulus` is not provided, set to 1.
 
