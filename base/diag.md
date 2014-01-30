@@ -1,0 +1,40 @@
+## base::diag
+
+Create, retrieve or update matrix diagnonals
+
+---
+### Extract a matrix diagonal as a vector
+
+base::**diag**(*x*: **Atomic.Dim(2)**)
+
+#### Returns
+.Dim(0) - a vector of the same type as the matrix *x* of length equal to the lesser of the matrix dimensions
+
+Each element in position `i` is the element from matrix `x[i,i]`. If the matrix row and columns names are identical, the result vector will have the same names, otherwise no names.
+
+---
+### Set a matrix diagonal from a vector
+
+base::**diag**(*x*: **Atomic.Dim(2)**) <- value: Atomic.Dim(0)
+
+`length(value) <= min(dim(x))`
+
+If `length(value) < min(dim(x))` then `value` is recycled (repeated until correct length).
+
+#### Effects
+
+For each element in `v`, elements `x[i,i]` are set to `value[i]`.
+
+---
+### Create an identity matrix
+
+base::**diag**(***nrow***: Numeric(1), ***ncol***: Numeric(1))
+
+base::**diag**(***nrow***: Numeric(1))
+
+If `ncol` is not provided, set equal to `nrow`
+
+#### Returns
+Numeric(*nrow*, *ncol*).Dim(2) - a *nrow*x*ncol* numeric matrix
+
+Each element is 1 if the row and column indices are equal, or 0 otherwise.
