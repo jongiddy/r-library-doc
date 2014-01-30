@@ -34,7 +34,7 @@ Complex(*length.out*[1]) - a complex vector of length `length.out[1]`
 Each element is a complex number with real component taken from successive values in `real` and imaginary component taken from successive values in `imaginary`.
 
 ---
-### Create complex numbers from modulus and argument components
+### Create complex numbers from polar co-ordinates
 
 base::**complex**(*length.out*: **Numeric**, ***modulus***: Numeric, ***argument***: Numeric)
 
