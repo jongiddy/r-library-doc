@@ -32,7 +32,7 @@ base::**diag**(***nrow***: Numeric(1), ***ncol***: Numeric(1))
 
 base::**diag**(***nrow***: Numeric(1))
 
-base::**diag**(*x*: Numeric(1))
+base::**diag**(*x*: **Numeric(1)**)
 
 If `x` is supplied as a vector or 1-dimensional array, set `nrow` and `ncol` equal to `x`
 
