@@ -7,9 +7,9 @@ Create, retrieve or update matrix diagnonals
 
 base::**diag**(*x*: **Numeric(1)**)
 
-base::**diag**(***nrow***: Numeric(1))
-
 base::**diag**(***nrow***: Numeric(1), ***ncol***: Numeric(1))
+
+base::**diag**(***nrow***: Numeric(1))
 
 If `x` is supplied, set `nrow` and `ncol` equal to `x`
 
