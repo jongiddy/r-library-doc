@@ -3,6 +3,38 @@
 Create, retrieve or update matrix diagnonals
 
 ---
+### Create an identity matrix
+
+base::**diag**(*x*: **Numeric(1)**)
+
+base::**diag**(***nrow***: Numeric(1), ***ncol***: Numeric(1))
+
+base::**diag**(***nrow***: Numeric(1))
+
+If `x` is supplied as a vector or 1-dimensional array, set `nrow` and `ncol` equal to `x`
+
+If `ncol` is not supplied, set equal to `nrow`
+
+#### Returns
+Numeric(*nrow*, *ncol*).Dim(2) - a *nrow* x *ncol* numeric matrix
+
+Each element is 1 if the row and column indices are equal, or 0 otherwise.
+
+---
+### Create a diagonal matrix
+
+base::**diag**(*x*: **Numeric(2,...)**)
+
+base::**diag**(*x*: **Numeric**, *nrow*: **Numeric(1)**, *ncol*: **Numeric(1)**)
+
+base::**diag**(*x*: **Numeric**, *nrow*: **Numeric(1)**)
+
+#### Returns
+Numeric(*nrow*, *ncol*) - a *nrow* x *ncol* numeric matrix
+
+For each element `x[i]`, the matrix element `[i,i]` has the same value. Other values are 0.
+
+---
 ### Extract a matrix diagonal as a vector
 
 base::**diag**(*x*: **A.Dim(2)**)
@@ -26,19 +58,5 @@ If `length(value) < min(dim(x))` then `value` is recycled (repeated until correc
 For each element in `value`, elements `x[i,i]` are set to `value[i]`.
 
 ---
-### Create an identity matrix
 
-base::**diag**(***nrow***: Numeric(1), ***ncol***: Numeric(1))
-
-base::**diag**(***nrow***: Numeric(1))
-
-base::**diag**(*x*: **Numeric(1)**)
-
-If `x` is supplied as a vector or 1-dimensional array, set `nrow` and `ncol` equal to `x`
-
-If `ncol` is not supplied, set equal to `nrow`
-
-#### Returns
-Numeric(*nrow*, *ncol*).Dim(2) - a *nrow* x *ncol* numeric matrix
-
-Each element is 1 if the row and column indices are equal, or 0 otherwise.
+[R Matrix Diagonals](http://stat.ethz.ch/R-manual/R-devel/library/base/html/diag.html)
