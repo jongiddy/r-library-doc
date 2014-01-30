@@ -10,7 +10,7 @@ base::**diag**(*x*: **A.Dim(2)**)
 #### Returns
 A.Dim(0) - a vector of the same type as the matrix *x* with length equal to the lesser of the matrix dimensions
 
-Each element in position `i` is the element from matrix `x[i,i]`. If the matrix row and columns names are identical, the result vector will have the same names, otherwise no names.
+Each element in position `i` is the matrix element `x[i,i]`. If the matrix row and columns names are identical, the result vector will have the same names, otherwise no names.
 
 ---
 ### Set a matrix diagonal from a vector
