@@ -1,16 +1,31 @@
-### base::abs
+## base::abs
 
 Absolute value
 
 ---
 
-base::**abs**(*x*: **Integer**) `->` Integer[*x*]
+base::**abs**(*x*: **Integer**)
 
-base::**abs**(*x*: **Numeric**) `->` Numeric[*x*]
+#### Returns
+Integer[*x*] - an integer vector with the same attributes as *x*.
 
-*Returns* |*x*|
+Each element contains the absolute value of each element in *x*
 
-*x* | Output
+*x* | Element
+------|-------
+<code>base::is.na(x) &#124; x >= 0</code> | `x`
+`x < 0`  | `-x`
+
+---
+
+base::**abs**(*x*: **Numeric**)
+
+#### Returns
+Numeric[*x*] - a numeric vector with the same attributes as *x*
+
+Each element contains the absolute value of each element in *x*
+
+*x* | Element
 ------|-------
 <code>base::is.na(x) &#124; x >= 0</code> | `x`
 `x < 0`  | `-x`
@@ -18,11 +33,14 @@ base::**abs**(*x*: **Numeric**) `->` Numeric[*x*]
 
 ---
 
-base::**abs**(*x*: **Complex**) `->` Numeric[*x*]
+base::**abs**(*x*: **Complex**)
 
 _This function is redundant: prefer `base::Mod(z: Complex): Numeric`_
 
-*Returns* the modulus (magnitude) of `x`
+#### Returns
+Numeric[*x*] - a numeric vector with the same attributes as *x*
+
+Each element contains the modulus (magnitude) of each element in `x`
 
 ---
 
@@ -30,7 +48,10 @@ base::**abs**(*x*: **Logical**) `->` Integer[*x*]
 
 _This function is redundant: prefer `base::as.integer(x: Logical): Integer`_
 
-*Returns* an integer according to following truth table:
+#### Returns
+Integer[*x*] - an integer vector with the same attributes as *x*
+
+Each element contains an integer according to following truth table:
 
 Logical | Integer
 -----|--------
