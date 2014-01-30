@@ -4,15 +4,21 @@ Absolute value
 
 ---
 
-base::**abs**(*x*: **Integer**): Integer
+base::**abs**(*x*: **Integer**) `->` Integer[*x*]
 
-base::**abs**(*x*: **Numeric**): Numeric
+base::**abs**(*x*: **Numeric**) `->` Numeric[*x*]
 
-*Returns* `-x` when `x < 0`, else `x`
+*Returns* |*x*|
+
+*x* | Output
+------|-------
+<code>base::is.na(x) &#124; x >= 0</code> | `x`
+`x < 0`  | `-x`
+
 
 ---
 
-base::**abs**(*x*: **Complex**): Numeric
+base::**abs**(*x*: **Complex**) `->` Numeric[*x*]
 
 _This function is redundant: prefer `base::Mod(z: Complex): Numeric`_
 
@@ -20,15 +26,16 @@ _This function is redundant: prefer `base::Mod(z: Complex): Numeric`_
 
 ---
 
-base::**abs**(*x*: **Logical**): Integer
+base::**abs**(*x*: **Logical**) `->` Integer[*x*]
 
 _This function is redundant: prefer `base::as.integer(x: Logical): Integer`_
 
+*Returns* an integer according to following truth table:
 
-When | Returns
+Logical | Integer
 -----|--------
-`x == TRUE` |  `1L`
-`x == FALSE` |  `0L`
-`base::is.na(x)` | `base::NA_integer_`
+`TRUE` |  `1L`
+`FALSE` |  `0L`
+`NA` | `NA_integer_`
 
 ---
