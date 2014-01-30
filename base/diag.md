@@ -23,11 +23,11 @@ Each element is 1 if the row and column indices are equal, or 0 otherwise.
 ---
 ### Create a diagonal matrix
 
-base::**diag**(*x*: **Numeric(2...)**)
-
 base::**diag**(*x*: **Numeric.Dim(0...1)**, *nrow*: **Numeric(1)**, *ncol*: **Numeric(1)**)
 
 base::**diag**(*x*: **Numeric.Dim(0...1)**, *nrow*: **Numeric(1)**)
+
+base::**diag**(*x*: **Numeric(2...)**)
 
 If *nrow* is not supplied, set equal to length of *x*
 
