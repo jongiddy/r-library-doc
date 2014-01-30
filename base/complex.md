@@ -3,19 +3,19 @@
 Create complex numbers
 
 ---
-base::**complex**(*length.out*: **Numeric**, *real*: **Numeric**, *imaginary*: **Numeric**): Complex(*length.out*)
+base::**complex**(*length.out*: **Numeric**, *real*: **Numeric**, *imaginary*: **Numeric**)
 
-base::**complex**(*length.out*: **Numeric**, *real*: **Numeric**): Complex(*length.out*)
+base::**complex**(*length.out*: **Numeric**, *real*: **Numeric**)
 
-base::**complex**(*length.out*: **Numeric**, ***imaginary***: Numeric): Complex(*length.out*)
+base::**complex**(*length.out*: **Numeric**, ***imaginary***: Numeric)
 
-base::**complex**(*length.out*: **Numeric**): Complex(*length.out*)
+base::**complex**(*length.out*: **Numeric**)
 
-base::**complex**(***real***: Numeric, ***imaginary***: Numeric): Complex
+base::**complex**(***real***: Numeric, ***imaginary***: Numeric)
 
-base::**complex**(***real***: Numeric): Complex
+base::**complex**(***real***: Numeric)
 
-base::**complex**(***imaginary***: Numeric): Complex
+base::**complex**(***imaginary***: Numeric)
 
 If `length.out` is not provided, set to the length of the longest supplied `real` or `imaginary` vectors.
 
@@ -23,21 +23,21 @@ If `real` is not provided, set to 0.
 
 If `imaginary` is not provided, set to 0.
 
-*Returns* a vector of complex numbers of length `length.out[1]`, where each complex number has real part taken from successive values in `real` and imaginary part taken from successive values in `imaginary`. If `real` or `imaginary` are shorter than `length.out[1]`, they are recycled.
+*Returns* Complex(*length.out*) - a vector of complex numbers of length `length.out[1]`, where each complex number has real part taken from successive values in `real` and imaginary part taken from successive values in `imaginary`. If `real` or `imaginary` are shorter than `length.out[1]`, they are recycled.
 
 ---
 
-base::**complex**(*length.out*: **Numeric**, ***modulus***: Numeric, ***argument***: Numeric): Complex(*length.out*)
+base::**complex**(*length.out*: **Numeric**, ***modulus***: Numeric, ***argument***: Numeric)
 
-base::**complex**(*length.out*: **Numeric**, ***modulus***: Numeric): Complex(*length.out*)
+base::**complex**(*length.out*: **Numeric**, ***modulus***: Numeric)
 
-base::**complex**(*length.out*: **Numeric**, ***argument***: Numeric): Complex(*length.out*)
+base::**complex**(*length.out*: **Numeric**, ***argument***: Numeric)
 
-base::**complex**(***modulus***: Numeric, ***argument***: Numeric): Complex
+base::**complex**(***modulus***: Numeric, ***argument***: Numeric)
 
-base::**complex**(***modulus***: Numeric): Complex
+base::**complex**(***modulus***: Numeric)
 
-base::**complex**(***argument***: Numeric): Complex
+base::**complex**(***argument***: Numeric)
 
 If `length.out` is not provided, set to the length of the longest supplied `modulus` or `argument` vectors.
 
@@ -45,13 +45,13 @@ If `modulus` is not provided, set to 1.
 
 If `argument` is not provided, set to 0.
 
-*Returns* a vector of `length.out[1]` complex numbers, where each complex number has modulus (magnitude) part taken from successive values in `modulus` and argument (phase) part taken from successive values in `argument`. If `modulus` or `argument` are shorter than `length.out[1]`, they are recycled.
+*Returns* Complex(*length.out*) - a vector of `length.out[1]` complex numbers, where each complex number has modulus (magnitude) part taken from successive values in `modulus` and argument (phase) part taken from successive values in `argument`. If `modulus` or `argument` are shorter than `length.out[1]`, they are recycled.
 
 ---
 
-base::**complex**(): Complex(0)
+base::**complex**()
 
-*Returns* a 0-length vector of type Complex.
+*Returns* Complex(0) - a 0-length vector of type Complex.
 
 ---
 
