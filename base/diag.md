@@ -63,17 +63,17 @@ Each element in position `i` is the matrix element `x[i,i]`. If the matrix row a
 ---
 ### Set a matrix diagonal from a vector
 
-base::**diag**(*x*: **Logical.Dim(2)**) <- value: Logical.Dim(0)
+base::**diag**(*x*: **Logical.Dim(2)**) **<-** *value*: **Logical.Dim(0)**
 
-base::**diag**(*x*: **Integer.Dim(2)**) <- value: Integer.Dim(0)
+base::**diag**(*x*: **Integer.Dim(2)**) **<-** *value*: **Integer.Dim(0)**
 
-base::**diag**(*x*: **Numeric.Dim(2)**) <- value: Numeric.Dim(0)
+base::**diag**(*x*: **Numeric.Dim(2)**) **<-** *value*: **Numeric.Dim(0)**
 
-base::**diag**(*x*: **Complex.Dim(2)**) <- value: Complex.Dim(0)
+base::**diag**(*x*: **Complex.Dim(2)**) **<-** *value*: **Complex.Dim(0)**
 
-base::**diag**(*x*: **Character.Dim(2)**) <- value: Character.Dim(0)
+base::**diag**(*x*: **Character.Dim(2)**) **<-** *value*: **Character.Dim(0)**
 
-base::**diag**(*x*: **Raw.Dim(2)**) <- value: Raw.Dim(0)
+base::**diag**(*x*: **Raw.Dim(2)**) **<-** *value*: **Raw.Dim(0)**
 
 `length(value) <= min(dim(x))`
 
