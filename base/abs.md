@@ -35,7 +35,7 @@ Each element is the absolute value of each element in *x*
 
 base::**abs**(*x*: **Complex**)
 
-_This function is redundant: prefer `base::Mod(z: Complex): Numeric`_
+_This function is redundant: prefer `base::Mod(z: Complex)`_
 
 #### Returns
 Numeric[*x*] - a numeric vector with the same attributes as *x*
@@ -46,7 +46,7 @@ Each element is the modulus (magnitude) of each element in `x`
 
 base::**abs**(*x*: **Logical**) `->` Integer[*x*]
 
-_This function is redundant: prefer `base::as.integer(x: Logical): Integer`_
+_This function is redundant: prefer `base::as.integer(x: Logical)`_
 
 #### Returns
 Integer[*x*] - an integer vector with the same attributes as *x*
