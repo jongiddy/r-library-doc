@@ -9,7 +9,7 @@ base::**abs**(*x*: **Integer**)
 #### Returns
 Integer[*x*] - an integer vector with the same attributes as *x*.
 
-Each element contains the absolute value of each element in *x*
+Each element is the absolute value of each element in *x*
 
 *x* | Element
 ------|-------
@@ -23,7 +23,7 @@ base::**abs**(*x*: **Numeric**)
 #### Returns
 Numeric[*x*] - a numeric vector with the same attributes as *x*
 
-Each element contains the absolute value of each element in *x*
+Each element is the absolute value of each element in *x*
 
 *x* | Element
 ------|-------
@@ -40,7 +40,7 @@ _This function is redundant: prefer `base::Mod(z: Complex): Numeric`_
 #### Returns
 Numeric[*x*] - a numeric vector with the same attributes as *x*
 
-Each element contains the modulus (magnitude) of each element in `x`
+Each element is the modulus (magnitude) of each element in `x`
 
 ---
 
@@ -51,7 +51,7 @@ _This function is redundant: prefer `base::as.integer(x: Logical): Integer`_
 #### Returns
 Integer[*x*] - an integer vector with the same attributes as *x*
 
-Each element contains an integer according to following truth table:
+Each element is an integer according to following truth table:
 
 Logical | Integer
 -----|--------
