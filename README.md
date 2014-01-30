@@ -37,8 +37,8 @@ provided by position or as a named parameter.
 
 For example, one of the signatures for the `base::complex` function is:
 
-base::**complex**(length.out: **Numeric(1)**, **modulus**: Numeric, **argument**: Numeric): Complex(*length.out*)
+base::**complex**(*length.out*: **Numeric**, ***modulus***: Numeric, ***argument***: Numeric)
 
-This signature for the `complex` function means the `length.out` parameter, a numeric vector of length 1, may be specified by adding it as the first positional parameter. Alternatively, any positional parameter can be specified as a named parameter. However, the `modulus` and `argument` parameters, both numeric vectors (of any length), *must* be specified as named parameters.  The return value is a complex number vector of size `length.out`.
+This signature for the `complex` function means the `length.out` parameter, a numeric vector of length 1, may be specified by adding it as the first positional parameter. Alternatively, any positional parameter can be specified as a named parameter. However, the `modulus` and `argument` parameters, both numeric vectors (of any length), *must* be specified as named parameters.
 
 Here, we document the most reasonable ways to use the function. However, due to the way these R functions are defined, there are additional ways to call them (e.g. it is possible to provide `modulus` and `argument` as positional parameters to `complex`) but these ways are not a good idea - they obscure the meaning of the function. If you absolutely need to write something weird, or, more likely, read something not documented here, a link to the original description is provided at the end of each function definition.
