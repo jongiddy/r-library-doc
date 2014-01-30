@@ -20,11 +20,11 @@ base::**complex**(***real***: Numeric)
 base::**complex**(***imaginary***: Numeric)
 
 
-If `length.out` is not provided, set to the length of the longest supplied `real` or `imaginary` vectors.
+If `length.out` is not supplied, set to the length of the longest supplied `real` or `imaginary` vectors.
 
-If `real` is not provided, set to 0.
+If `real` is not supplied, set to 0.
 
-If `imaginary` is not provided, set to 0.
+If `imaginary` is not supplied, set to 0.
 
 If `real` or `imaginary` are shorter than `length.out[1]`, they are recycled (repeated until the specified length).
 
@@ -48,11 +48,11 @@ base::**complex**(***modulus***: Numeric)
 
 base::**complex**(***argument***: Numeric)
 
-If `length.out` is not provided, set to the length of the longest supplied `modulus` or `argument` vectors.
+If `length.out` is not supplied, set to the length of the longest supplied `modulus` or `argument` vectors.
 
-If `modulus` is not provided, set to 1.
+If `modulus` is not supplied, set to 1.
 
-If `argument` is not provided, set to 0.
+If `argument` is not supplied, set to 0.
 
 The `argument` parameter is an angle, measured in radians.
 
