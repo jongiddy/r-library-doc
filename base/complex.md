@@ -1,8 +1,10 @@
-### base::complex
+## base::complex
 
 Create complex numbers
 
 ---
+### Create complex numbers from real and imaginary components
+
 base::**complex**(*length.out*: **Numeric**, *real*: **Numeric**, *imaginary*: **Numeric**)
 
 base::**complex**(*length.out*: **Numeric**, *real*: **Numeric**)
@@ -17,15 +19,22 @@ base::**complex**(***real***: Numeric)
 
 base::**complex**(***imaginary***: Numeric)
 
+
 If `length.out` is not provided, set to the length of the longest supplied `real` or `imaginary` vectors.
 
 If `real` is not provided, set to 0.
 
 If `imaginary` is not provided, set to 0.
 
-*Returns* Complex(*length.out*) - a vector of complex numbers of length `length.out[1]`, where each complex number has real part taken from successive values in `real` and imaginary part taken from successive values in `imaginary`. If `real` or `imaginary` are shorter than `length.out[1]`, they are recycled.
+If `real` or `imaginary` are shorter than `length.out[1]`, they are recycled (repeated until the specified length).
+
+#### Returns
+Complex(*length.out*[1]) - a vector of complex numbers of length `length.out[1]`
+
+Each element has real part taken from successive values in `real` and imaginary part taken from successive values in `imaginary`.
 
 ---
+### Create complex numbers from modulus and argument components
 
 base::**complex**(*length.out*: **Numeric**, ***modulus***: Numeric, ***argument***: Numeric)
 
@@ -45,13 +54,23 @@ If `modulus` is not provided, set to 1.
 
 If `argument` is not provided, set to 0.
 
-*Returns* Complex(*length.out*) - a vector of `length.out[1]` complex numbers, where each complex number has modulus (magnitude) part taken from successive values in `modulus` and argument (phase) part taken from successive values in `argument`. If `modulus` or `argument` are shorter than `length.out[1]`, they are recycled.
+The `argument` parameter is an angle, measured in radians.
+
+If `modulus` or `argument` are shorter than `length.out[1]`, they are recycled (repeated until the specified length).
+
+#### Returns
+Complex(*length.out*[1]) - a vector of complex numbers of length `length.out[1]`
+
+Each element has modulus (magnitude) taken from successive values in `modulus` and argument (phase), in radians, taken from successive values in `argument`.
 
 ---
 
 base::**complex**()
 
-*Returns* Complex(0) - a 0-length vector of type Complex.
+#### Returns
+Complex(0) - a vector of complex numbers of length 0
+
+This vector has no elements, but has "complex" mode.
 
 ---
 
