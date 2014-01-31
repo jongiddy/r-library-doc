@@ -3,9 +3,9 @@
 Create an integer vector with each element set to 0.
 
 ---
-base::**integer**(*length*: **Double(1)**)
+base::**integer**(*length*: **Integer(1)**)
 
-<code>! base::**is.na**(*length*) && base::**as.integer**(*length*) >= 0</code>
+<code>! base::**is.na**(*length*) && *length* >= 0</code>
 
 #### Returns
 Integer(*length*) - an integer vector of length *length*
