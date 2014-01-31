@@ -3,21 +3,21 @@
 Create complex numbers
 
 ---
-### Create complex numbers from real and imaginary components
+### Create complex numbers from rectangular co-ordinates
 
-base::**complex**(*length.out*: **Numeric**, *real*: **Numeric**, *imaginary*: **Numeric**)
+base::**complex**(*length.out*: **Double**, *real*: **Double**, *imaginary*: **Double**)
 
-base::**complex**(*length.out*: **Numeric**, *real*: **Numeric**)
+base::**complex**(*length.out*: **Double**, *real*: **Double**)
 
-base::**complex**(*length.out*: **Numeric**, ***imaginary***: Numeric)
+base::**complex**(*length.out*: **Double**, ***imaginary***: Double)
 
-base::**complex**(*length.out*: **Numeric**)
+base::**complex**(*length.out*: **Double**)
 
-base::**complex**(***real***: Numeric, ***imaginary***: Numeric)
+base::**complex**(***real***: Double, ***imaginary***: Double)
 
-base::**complex**(***real***: Numeric)
+base::**complex**(***real***: Double)
 
-base::**complex**(***imaginary***: Numeric)
+base::**complex**(***imaginary***: Double)
 
 
 If `length.out` is not supplied, set to the length of the longest supplied `real` or `imaginary` vectors.
@@ -36,17 +36,17 @@ Each element is a complex number with real component taken from successive value
 ---
 ### Create complex numbers from polar co-ordinates
 
-base::**complex**(*length.out*: **Numeric**, ***modulus***: Numeric, ***argument***: Numeric)
+base::**complex**(*length.out*: **Double**, ***modulus***: Double, ***argument***: Double)
 
-base::**complex**(*length.out*: **Numeric**, ***modulus***: Numeric)
+base::**complex**(*length.out*: **Double**, ***modulus***: Double)
 
-base::**complex**(*length.out*: **Numeric**, ***argument***: Numeric)
+base::**complex**(*length.out*: **Double**, ***argument***: Double)
 
-base::**complex**(***modulus***: Numeric, ***argument***: Numeric)
+base::**complex**(***modulus***: Double, ***argument***: Double)
 
-base::**complex**(***modulus***: Numeric)
+base::**complex**(***modulus***: Double)
 
-base::**complex**(***argument***: Numeric)
+base::**complex**(***argument***: Double)
 
 If `length.out` is not supplied, set to the length of the longest supplied `modulus` or `argument` vectors.
 
