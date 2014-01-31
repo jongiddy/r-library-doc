@@ -10,7 +10,7 @@ base::**abs**(*x*: **Double**) **->** *result*: Double[*x*]
 
 
 #### Returns
-an vector of the indicated type with the same attributes as *x*.
+a vector of the indicated type with the same attributes as *x*.
 
 Each element is the absolute value of each element in *x*
 
