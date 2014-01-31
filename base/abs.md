@@ -4,28 +4,17 @@ Absolute value
 
 ---
 
-base::**abs**(*x*: **Integer**)
+base::**abs**(*x*: **Integer**) **->** *result*: Integer[*x*]
+
+base::**abs**(*x*: **Double**) **->** *result*: Double[*x*]
+
 
 #### Returns
-Integer[*x*] - an integer vector with the same attributes as *x*.
+an vector of the indicated type with the same attributes as *x*.
 
 Each element is the absolute value of each element in *x*
 
-*x* | Element
-------|-------
-<code>base::is.na(x) &#124; x >= 0</code> | `x`
-`x < 0`  | `-x`
-
----
-
-base::**abs**(*x*: **Numeric**)
-
-#### Returns
-Numeric[*x*] - a numeric vector with the same attributes as *x*
-
-Each element is the absolute value of each element in *x*
-
-*x* | Element
+*x* | *result*
 ------|-------
 <code>base::is.na(x) &#124; x >= 0</code> | `x`
 `x < 0`  | `-x`
@@ -38,7 +27,7 @@ base::**abs**(*x*: **Complex**)
 _This function is redundant: prefer `base::Mod(z: Complex)`_
 
 #### Returns
-Numeric[*x*] - a numeric vector with the same attributes as *x*
+Double[*x*] - a numeric vector with the same attributes as *x*
 
 Each element is the modulus (magnitude) of each element in `x`
 
