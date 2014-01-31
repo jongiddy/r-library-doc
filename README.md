@@ -25,6 +25,25 @@ Hence, many functions will accept a vector and return a vector, cloning any
 additional values such as dimensions and labels. We call these functions
 shape-preserving, and indicate them purely by their base types.
 
+The type notation is as follows:
+
+Double - a vector, matrix or array of type Double
+Double(m) - a vector or 1-dimensional array of type Double (as a return value, indicates a vector)
+Double(1) - a vector or 1-dimensional array with length 1
+Double.Dim(0) - a vector of type Double, with no dimension information
+Double.Dim(1) - 1-dimensional array of type Double
+Double(m, n) - a matrix (2-dimensional array)
+Double.Dim(2) - an alternative representation of a matrix
+
+Double(5).Dim(0) - a 5-element vector, with no attributes
+Double(3, 2) - a 3 x 2 matrix
+Double.Dim(2..4) - a 2, 3, or 4-dimensional array
+
+Note, m, n, etc. can be replaced by a number (3) or range (2..4) to indicate restrictions on size or dimensions.
+
+After an atomic type, the parentheses indicate the size of each dimension. After .Dim, the parenthese indicate the number of dimensions.
+
+
 The R libraries can be incredibly redundant - we flag up redundancies and suggest
 the preferred function.  By the word "prefer", we mean use the preferred
 function unless the redundant function is more readable (e.g. for consistency
