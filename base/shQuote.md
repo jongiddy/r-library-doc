@@ -4,13 +4,13 @@ Escape strings for passing to shell
 
 ---
 
-base::**shQuote**(*string*: **Char**, *type*: **Char**)
+base::**shQuote**(*string*: **Char**, *type*: **Char(1)**)
 
 base::**shQuote**(*string*: **Char**)
 
 > *type* in `c("s", "sh", "cs", "csh", "cm", "cmd")`
 
-If *type* is not supplied, set to `"sh"`.
+If *type* is not supplied, on Linux set to `"sh"`, on Windows set to `"cmd"`.
 
 *Returns* Char.Dim(0) - a character vector of same length as *string*
 
