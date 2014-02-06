@@ -21,3 +21,10 @@ Each element returned is the string element escaped for passing to a shell of ty
 "s", "sh" | Bourne Shell, Bash
 "cs", "csh" | CShell, TCShell
 "cm", "cmd" | Windows Command
+
+---
+
+
+[R Quote Strings for Use in OS Shells](http://stat.ethz.ch/R-manual/R-patched/library/base/html/shQuote.html)
+
+
